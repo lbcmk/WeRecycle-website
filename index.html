@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Index</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700,900|Roboto:100,500,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
+</head>
+
+<body> 
+
+  <center><h1>Index of Items</h1> </center>
+
+      <input type="text" id="myInput" onkeyup="search()" placeholder="Search for an item..." title="Search for items">
+
+<!-- Trigger/Open The Modal -->
+
+<center>
+<button id="myBtn" class="myBtn">What do the colours mean?</button>
+<h6 class="nightmode-text">Nightmode</h6>
+<label class="nightmode-switch">
+<input type="checkbox" id="myCheck" onclick="checkBoxChecked()">
+<span class="slider"></span>
+</label>
+</center>
+
+      <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Colours Meaning</h2>
+    </div>
+    <div class="modal-body">
+			<br>
+				<svg width="25" height="30">
+				<circle cx="12.5" cy="12.5" r="9.5" stroke="black" stroke-width="3" fill="rgb(65, 64, 60)" />
+				<p class="colourmeaningtext">Garbage</p>
+				</svg><br>
+
+				<svg width="25" height="30">
+				<circle cx="12.5" cy="12.5" r="9.5" stroke="black" stroke-width="3" fill="rgb(54, 82, 193)" />
+				<p class="colourmeaningtext">Recycling</p>
+				</svg><br>
+
+				<svg width="25" height="30">
+				<circle cx="12.5" cy="12.5" r="9.5" stroke="black" stroke-width="3" fill="rgb(35, 218, 74)" />
+				<p class="colourmeaningtext">Compost</p>
+				</svg><br>
+
+				<svg width="25" height="30">
+				<circle cx="12.5" cy="12.5" r="9.5" stroke="black" stroke-width="3" fill="rgb(141, 110, 99)" />
+				<p class="colourmeaningtext">Yard Waste</p>
+				</svg><br>
+
+    </div>
+  </div>
+
+</div>
+
+	<center><h5 class="warning">Anything with food in it is garbage.</h5></center>
+	</hr>
+
+  <div class="content">
+    <center>
+      <ul id="item-list">
+          
+      </ul>
+    </center>
+  </div>      
+
+	<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDGBMe0ys1dbXDGQeu8lavXjgcLe1Kj9E0",
+      authDomain: "categories-database-85469.firebaseapp.com",
+      databaseURL: "https://categories-database-85469.firebaseio.com",
+      projectId: "categories-database-85469",
+      storageBucket: "categories-database-85469.appspot.com",
+      messagingSenderId: "61962162157",
+      appId: "1:61962162157:web:20011d5c91126336fb21e4"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
+
+<script src="script.js"></script>
+  </body>
+</html>

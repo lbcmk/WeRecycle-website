@@ -1,0 +1,175 @@
+/*button{
+  background-color: rgb(65, 64, 60);
+  color: #fff;
+  padding: 14px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  font-variant: small-caps;
+}*/
+:root {
+--backgroundcolor: #212121;
+--colorsround: 1em;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  color: #fff;
+  padding: 8px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+  opacity: 1;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-variant: normal;
+  background-color: var(--backgroundcolor);
+  text-align: center;
+}
+
+#myInput {
+	width: 100%;
+	box-sizing: border-box;
+  position: center;
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 16px; /* Add some padding */
+  border: 3px solid rgb(194, 194, 194); /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+	background-color: var(--backgroundcolor);
+}
+
+#item-list {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+body{
+	background-color: var(--backgroundcolor);
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+	font-family: 'Roboto', sans-serif;
+	border-radius: var(--colorsround) var(--colorsround);
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+	padding: 10px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 93, 93);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 1px 16px;
+  background-color: rgb(248, 117, 117);
+  color: white;
+	font-family: 'Roboto', sans-serif;
+	border-radius: var(--colorsround) var(--colorsround) 0px 0px;
+}
+
+.colourmeaningtext {
+	padding: 0px 10px;
+	display: inline-block;
+	font-size: 18px
+}
+
+.modal-body {
+	padding: 0px 16px;
+	font-family: 'Roboto', sans-serif;
+	display: inline-block;
+}
+
+.myBtn {
+  background-color: rgb(248, 117, 117);
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+	border-radius: 150px;
+	width: 50%;
+  font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+}
+
+
+
+.nightmode-text {
+ padding: 0px 12px;
+ display:inline-block;
+}
+
+.nightmode-switch {
+ display:inline-block;
+}
