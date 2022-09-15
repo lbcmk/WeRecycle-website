@@ -1,2 +1,2 @@
 # WeRecycle-website
-WeRecycle website that I made in 2019 with github.com/AritroSaha10
+WeRecycle website made in 2019 with help from [AritroSaha10](https://github.com/AritroSaha10)
